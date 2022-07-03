@@ -1,9 +1,23 @@
 .stats-cards {
-  .mat-card {
-    overflow: hidden;
-  }
+    .mat-card {
+        overflow: hidden;
+    }
 }
 
 table {
-  width: 100%;
+    width: 100%;
+}
+
+.mat-form-field {
+    width: 10%;
+}
+
+.mat-header-cell {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+img {
+    width: 200px;
+    height: 200px;
 }

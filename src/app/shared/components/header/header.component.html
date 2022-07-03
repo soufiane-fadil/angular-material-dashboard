@@ -1,13 +1,18 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button (click)="toggleSideBar()">
+        <!-- <button mat-icon-button (click)="toggleSideBar()">
             <mat-icon>menu</mat-icon>
-        </button>
+        </button> -->
 
-        <span> APP LOGO </span>
+        <span><img alt="icon" class="img-thumbnail" src='../../../../assets/App icon 48x48.png'/> </span>
 
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
+                <!-- <li>
+                    <button mat-icon-button>
+                  <mat-icon>upload</mat-icon>
+              </button>
+                </li> -->
                 <li>
                     <button mat-icon-button>
                         <mat-icon>settings</mat-icon>
@@ -18,7 +23,7 @@
                         <mat-icon>help_outline</mat-icon>
                     </button>
                 </li>
-                <li>
+                <!-- <li>
                     <button mat-button [matMenuTriggerFor]="menu">
                         <mat-icon>person_outline</mat-icon>
                     </button>
@@ -29,7 +34,7 @@
                         </button>
                     </mat-menu>
 
-                </li>
+                </li> -->
             </ul>
         </div>
     </mat-toolbar-row>

@@ -1,0 +1,35 @@
+.mat-card,
+.mat-card-header,
+section {
+    text-align: center;
+    justify-content: center;
+}
+
+.mat-card-image {
+    max-width: 98%;
+}
+
+.mat-button-toggle {
+  background-color: white;
+  color: black;
+}
+
+.mat-button-toggle-checked {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  display: inline-block;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+section{
+  width: 100%;
+}
