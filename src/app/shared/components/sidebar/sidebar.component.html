@@ -1,32 +1,35 @@
 <mat-nav-list>
     <div class="profile-card">
         <div class="header">
-            <h2>Soufiane FADIL</h2>
-            <h4>example@email.com</h4>
+            <h2>LeadSpotting</h2>
+            <!-- <h4>example@email.com</h4> -->
         </div>
-        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+        <img src="../../../../assets/App icon 128x128.png" alt="LeadSpotting">
     </div>
 
-    <mat-divider></mat-divider>
+    <!-- <mat-divider></mat-divider> -->
 
     <h2 matSubheader>Pages</h2>
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+      <mat-icon>dashboard</mat-icon>
+      Dashboard
+    </a>
+    <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts"></a> -->
+    <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a> -->
 
     <mat-divider></mat-divider>
 
     <h2 matSubheader>Tools</h2>
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
-        <mat-icon>import_contacts</mat-icon>
-        Contacts
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/upload">
+        <mat-icon>upload</mat-icon>
+        Upload
     </a>
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
         <mat-icon>contact_phone</mat-icon>
         Leads
-    </a>
+    </a> -->
 
 </mat-nav-list>

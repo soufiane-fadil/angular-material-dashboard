@@ -1,1 +1,146 @@
-<p>posts works!</p>
+<!-- <p>{{info.user}}</p>
+<div class="container">
+    <div><img [src]="info.img" /></div>
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+    <div fxFlex="40">
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+        <mat-card fxFlex="25">
+            <app-widget-card label="New Users" total="12k" percentage="50" [data]="cards"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="25">
+            <app-widget-card label="Users retention" total="10k" percentage="40" [data]="cards"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="25">
+            <app-widget-card label="Users engagement" total="8k" percentage="30" [data]="cards"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="25">
+            <app-widget-card label="Referral" total="6k" percentage="20" [data]="cards"></app-widget-card>
+        </mat-card>
+    </div>
+</div> -->
+<!-- <mat-divider></mat-divider> -->
+<mat-grid-list cols="2" rowHeight="6:5">
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <!-- <div mat-card-avatar class="example-header-image"></div> -->
+                <mat-card-title>{{info.tweet}}</mat-card-title>
+                <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+            </mat-card-header>
+            <picture>
+                <source media='(min-width:0px)' [srcset]="info.img">
+                <img mat-card-image src="" alt="Tweet">
+            </picture>
+            <!-- <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                </p>
+            </mat-card-content> -->
+            <mat-card-actions>
+                <button mat-button><mat-icon>favorite </mat-icon>{{info.likes}}</button>
+                <button mat-button><mat-icon>comment </mat-icon>{{info.comments}}</button>
+                <button mat-button><mat-icon>share </mat-icon>{{info.shares}}</button>
+                <button mat-button><mat-icon>format_quote </mat-icon>{{info.quotes}}</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <app-widget-pie [data]="pieChart"></app-widget-pie>
+            <!-- <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu (using <code>picture</code> tag)</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <picture>
+                <source media='(min-width:0px)' srcset="https://material.angular.io/assets/img/examples/shiba2.jpg">
+                <img mat-card-image src="" alt="Photo of a Shiba Inu">
+            </picture>
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>LIKE</button>
+                <button mat-button>SHARE</button>
+            </mat-card-actions> -->
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-card>
+    <mat-grid-list cols="1" rowHeight="10:1">
+      <mat-card-title>Traction</mat-card-title>
+        <mat-grid-tile>
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Likes" total={{info.likes}} percentage="50" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Comments" total={{info.comments}} percentage="40" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Shares" total={{info.shares}} percentage="30" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Quotes" total={{info.quotes}} percentage="20" [data]="cards"></app-widget-card>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <!-- <mat-divider></mat-divider> -->
+    <br>
+    <mat-grid-list cols="1" rowHeight="10:1">
+      <mat-card-title>Prediction</mat-card-title>
+        <mat-grid-tile>
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Likes" total={{info.likes}} percentage="50" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Comments" total={{info.comments}} percentage="40" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Shares" total={{info.shares}} percentage="30" [data]="cards"></app-widget-card>
+                </mat-card>
+                <mat-card fxFlex="25">
+                    <app-widget-card label="Quotes" total={{info.quotes}} percentage="20" [data]="cards"></app-widget-card>
+                </mat-card>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-divider></mat-divider>
+</mat-card>
+<mat-card>
+<mat-grid-list cols="1" rowHeight="10:2">
+    <mat-grid-tile>
+      <section>
+        <mat-card-title>Dicision</mat-card-title>
+        <mat-button-toggle-group [formControl]="fontStyleControl" aria-label="Font Style">
+          <mat-button-toggle value="ignore">Ignore</mat-button-toggle>
+          <mat-button-toggle value="comment">Comment</mat-button-toggle>
+        </mat-button-toggle-group>
+        <br>
+        <br>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Leave a comment</mat-label>
+            <textarea matInput placeholder="Ex. Due to..."></textarea>
+          </mat-form-field>
+        </form>
+      </section>
+        <!-- <p>{{fontStyleControl.value}}</p> -->
+  </mat-grid-tile>
+</mat-grid-list>
+</mat-card>
+<!-- <div>
+            <app-widget-pie [data]="pieChart"></app-widget-pie>
+        </div> -->
+<br>
+<br>
+<br>
