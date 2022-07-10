@@ -23,7 +23,7 @@
     </div>
 </div> -->
 <!-- <mat-divider></mat-divider> -->
-<mat-grid-list cols="2" rowHeight="6:5">
+<mat-grid-list cols="2" rowHeight="7:6">
     <mat-grid-tile>
         <mat-card class="example-card">
             <mat-card-header>
@@ -74,8 +74,8 @@
 </mat-grid-list>
 <br>
 <mat-card>
-    <mat-grid-list cols="1" rowHeight="10:1">
-      <mat-card-title>Traction</mat-card-title>
+    <mat-grid-list cols="1" rowHeight="10:2">
+        <mat-card-title>Traction</mat-card-title>
         <mat-grid-tile>
             <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
                 <mat-card fxFlex="25">
@@ -95,8 +95,8 @@
     </mat-grid-list>
     <!-- <mat-divider></mat-divider> -->
     <br>
-    <mat-grid-list cols="1" rowHeight="10:1">
-      <mat-card-title>Prediction</mat-card-title>
+    <mat-grid-list cols="1" rowHeight="10:2">
+        <mat-card-title>Prediction</mat-card-title>
         <mat-grid-tile>
             <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
                 <mat-card fxFlex="25">
@@ -117,26 +117,26 @@
     <mat-divider></mat-divider>
 </mat-card>
 <mat-card>
-<mat-grid-list cols="1" rowHeight="10:2">
-    <mat-grid-tile>
-      <section>
-        <mat-card-title>Dicision</mat-card-title>
-        <mat-button-toggle-group [formControl]="fontStyleControl" aria-label="Font Style">
-          <mat-button-toggle value="ignore">Ignore</mat-button-toggle>
-          <mat-button-toggle value="comment">Comment</mat-button-toggle>
-        </mat-button-toggle-group>
-        <br>
-        <br>
-        <form class="example-form">
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Leave a comment</mat-label>
-            <textarea matInput placeholder="Ex. Due to..."></textarea>
-          </mat-form-field>
-        </form>
-      </section>
-        <!-- <p>{{fontStyleControl.value}}</p> -->
-  </mat-grid-tile>
-</mat-grid-list>
+    <mat-grid-list cols="1" rowHeight="10:2">
+        <mat-grid-tile>
+            <section>
+                <mat-card-title>Dicision</mat-card-title>
+                <mat-button-toggle-group [formControl]="fontStyleControl" aria-label="Font Style">
+                    <mat-button-toggle value="ignore">Ignore</mat-button-toggle>
+                    <mat-button-toggle value="comment">Comment</mat-button-toggle>
+                </mat-button-toggle-group>
+                <br>
+                <br>
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Leave a comment</mat-label>
+                        <textarea matInput placeholder="Ex. Due to..."></textarea>
+                    </mat-form-field>
+                </form>
+            </section>
+            <!-- <p>{{fontStyleControl.value}}</p> -->
+        </mat-grid-tile>
+    </mat-grid-list>
 </mat-card>
 <!-- <div>
             <app-widget-pie [data]="pieChart"></app-widget-pie>
